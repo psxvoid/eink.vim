@@ -3,9 +3,6 @@
 " act like t_Co=0 but use (256) color on just a few things
 "
 
-" for termux set ~/.termux/colors.properties (to reload run "termux-reload-settings"):
-" cursor=#A9AA09
-
 hi clear
 if exists("syntax_on")
     syntax reset
@@ -26,7 +23,7 @@ if !has('gui_running')
     hi StatusLineNC cterm=reverse                       ctermfg=NONE
     hi VertSplit    cterm=reverse                       ctermfg=NONE
     hi Title        cterm=bold                          ctermfg=NONE
-    hi Visual       cterm=NONE    ctermbg=LightGrey     ctermfg=Black
+    hi Visual       cterm=reverse                       ctermfg=NONE
     hi VisualNOS    cterm=bold                          ctermfg=NONE
     hi WarningMsg   cterm=standout                      ctermfg=NONE
     hi WildMenu     cterm=standout                      ctermfg=NONE
@@ -46,7 +43,7 @@ if !has('gui_running')
     hi PreProc      cterm=None                          ctermfg=NONE
     hi Directive    cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Conditional  cterm=NONE          ctermbg=NONE    ctermfg=NONE
-    hi Comment      cterm=NONE          ctermbg=White    ctermfg=DarkGrey
+    hi Comment      cterm=bold          ctermbg=NONE    ctermfg=240
     hi Func         cterm=None          ctermbg=234     ctermfg=250
     hi Identifier   cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Statement    cterm=NONE          ctermbg=NONE    ctermfg=NONE
@@ -146,7 +143,8 @@ else
     hi MatchParen   gui=bold            guibg=gray70    guifg=NONE
     hi ColorColumn                                      guifg=gray60
   else
-    hi Normal       gui=NONE            guibg=#1d1f21   guifg=gray70
+  hi Cursor guifg=white guibg=black
+	hi Normal       gui=NONE            guibg=#1d1f21   guifg=gray70
     hi SpecialKey   gui=bold                            guifg=NONE
     hi IncSearch    gui=reverse                         guifg=NONE
     hi Search       gui=reverse                         guifg=NONE
