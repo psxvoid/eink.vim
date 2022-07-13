@@ -3,6 +3,9 @@
 " act like t_Co=0 but use (256) color on just a few things
 "
 
+" for termux set ~/.termux/colors.properties (to reload run "termux-reload-settings"):
+" cursor=#A9AA09
+
 hi clear
 if exists("syntax_on")
     syntax reset
@@ -23,7 +26,7 @@ if !has('gui_running')
     hi StatusLineNC cterm=reverse                       ctermfg=NONE
     hi VertSplit    cterm=reverse                       ctermfg=NONE
     hi Title        cterm=bold                          ctermfg=NONE
-    hi Visual       cterm=reverse                       ctermfg=NONE
+    hi Visual       cterm=NONE    ctermbg=LightGrey     ctermfg=Black
     hi VisualNOS    cterm=bold                          ctermfg=NONE
     hi WarningMsg   cterm=standout                      ctermfg=NONE
     hi WildMenu     cterm=standout                      ctermfg=NONE
@@ -43,7 +46,7 @@ if !has('gui_running')
     hi PreProc      cterm=None                          ctermfg=NONE
     hi Directive    cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Conditional  cterm=NONE          ctermbg=NONE    ctermfg=NONE
-    hi Comment      cterm=bold          ctermbg=NONE    ctermfg=240
+    hi Comment      cterm=NONE          ctermbg=White    ctermfg=DarkGrey
     hi Func         cterm=None          ctermbg=234     ctermfg=250
     hi Identifier   cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Statement    cterm=NONE          ctermbg=NONE    ctermfg=NONE
