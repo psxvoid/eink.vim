@@ -32,10 +32,10 @@ if !has('gui_running')
     hi WildMenu     cterm=standout                      ctermfg=NONE
     hi Folded       cterm=standout                      ctermfg=NONE
     hi FoldColumn   cterm=standout                      ctermfg=NONE
-    hi DiffAdd      cterm=bold                          ctermfg=NONE
-    hi DiffChange   cterm=bold                          ctermfg=NONE
+    hi DiffAdd      cterm=bold ctermbg=LightBlue        ctermfg=Black
+    hi DiffChange   cterm=NONE          ctermbg=LightYellow     ctermfg=249
     hi DiffDelete   cterm=bold                          ctermfg=NONE
-    hi DiffText     cterm=reverse                       ctermfg=NONE
+    hi DiffText     cterm=NONE          ctermbg=59      ctermfg=249
     hi Type         cterm=None          ctermbg=NONE    ctermfg=NONE
     hi Keyword      cterm=None          ctermbg=NONE    ctermfg=NONE
     hi Number       cterm=None          ctermbg=NONE    ctermfg=NONE
@@ -46,7 +46,7 @@ if !has('gui_running')
     hi PreProc      cterm=None                          ctermfg=NONE
     hi Directive    cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Conditional  cterm=NONE          ctermbg=NONE    ctermfg=NONE
-    hi Comment      cterm=NONE          ctermbg=White    ctermfg=DarkGrey
+    hi Comment      cterm=NONE          ctermbg=White   ctermfg=DarkGrey
     hi Func         cterm=None          ctermbg=234     ctermfg=250
     hi Identifier   cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Statement    cterm=NONE          ctermbg=NONE    ctermfg=NONE
