@@ -15,7 +15,7 @@ let colors_name = "eink"
 
 if !has('gui_running')
   if &background == "light"
-    hi Normal       cterm=NONE          ctermbg=white   ctermfg=235
+    hi Normal       cterm=NONE          ctermbg=NONE   ctermfg=Black
     hi SpecialKey   cterm=bold                          ctermfg=NONE
     hi IncSearch    cterm=reverse                       ctermfg=NONE
     hi Search       cterm=reverse                       ctermfg=NONE
