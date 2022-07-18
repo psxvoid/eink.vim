@@ -46,7 +46,7 @@ if !has('gui_running')
     hi PreProc      cterm=None                          ctermfg=NONE
     hi Directive    cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Conditional  cterm=NONE          ctermbg=NONE    ctermfg=NONE
-    hi Comment      cterm=NONE          ctermbg=White   ctermfg=DarkGrey
+    hi Comment      cterm=NONE          ctermbg=NONE   ctermfg=Grey
     hi Func         cterm=None          ctermbg=234     ctermfg=250
     hi Identifier   cterm=NONE          ctermbg=NONE    ctermfg=NONE
     hi Statement    cterm=NONE          ctermbg=NONE    ctermfg=NONE
